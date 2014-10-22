@@ -27,8 +27,10 @@
             if (prop.PropertyName != "Name" && prop.PropertyName != "GiftWrap")
             {
                 <div class="form-group">
-                    <label>@(prop.DisplayName ?? prop.PropertyName)</label>
-                    @Html.TextBox(prop.PropertyName, null, new { @class= "form-control" })
+                    <label class="control-label col-md-2">@(prop.DisplayName ?? prop.PropertyName)</label>
+                    <div class="col-md-10">
+                        @Html.TextBox(prop.PropertyName, null, new { @class = "form-control" })
+                    </div>
                 </div>
             }
         }

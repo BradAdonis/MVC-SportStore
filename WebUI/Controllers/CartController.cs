@@ -46,7 +46,7 @@ namespace WebUI.Controllers
             }
             else
             {
-                return View("shippingDetails");
+                return View("Checkout");
             }
         }
 

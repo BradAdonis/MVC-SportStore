@@ -18,7 +18,7 @@ namespace WebUI.Controllers
             this.repository = productrepository;
         }
 
-        public ViewResult List(string category, int page = 1)
+        public ViewResult List(string category = null, int page = 1)
         {
             ProductListViewModel model = new ProductListViewModel
             {
